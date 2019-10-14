@@ -1,0 +1,169 @@
+* { 
+    box-sizing: border-box; /*Altuera eta zabalera nola kalkutzen diren balio du*/
+    }
+
+.cancelbtn { /*Itxi botoia desberdintzeko*/
+    padding: 14px 20px;
+    background-color: #FF5252;
+    }
+
+.cancelbtn, .signupbtn { /*"Float" eta zabalera berdina jartzeko itxi eta erregistratu botoiei */
+    float: left;
+    width: 50%;
+    }
+
+.container { /*"div class="container"" dauden elementuak taularen ertzetik banatzeko*/
+    padding: 16px;
+    }
+    
+.modal { /*Formularioaren atzealdea*/
+    display: none; /*Eskutatuta dago hasiera batean*/
+    position: fixed; /*Ez da lekutik mugitzen nahiz eta web orrian igo edo jeitzi*/
+    z-index: 1; /*Web orriaren elementuen aurreko planoan egoteko edo atzeko plano batean*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /*Eduki asko baldin badago, taula baimentzen du "scroll" egitea, igo/jeitsi egitea*/
+    background-image: url("Argazkiak/semitransparente.png");
+    padding-top: 50px; /*Bakarrik goiko aldearekiko zenbat pixelak usten diren taularen ertzetik eta elementuen artean*/
+    }
+
+.modal-content { /*Formularioaren elementuak*/
+    background-color: #fefefe;
+    margin: auto; /* 5% goiko aldetik, 15% beheko aldetik eta zentratuta "auto" izateagatik */
+    border: none;
+    width: 80%;
+    font-family: 'Muli', sans-serif;
+    }
+
+    
+.close { /*"span"-aren "class=close" X ikonoa editatzeko*/
+    position: absolute; /*Web orriaren edozein lekuan X ikonoa jartzeko ahalbidetzen du*/
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    }
+    
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+    }
+    
+.clearfix::after {/*Erabilitako "floats" botoientzako kentzeko*/
+    content: "";
+    clear: both; /*Ezin dira "float" elementuak jarri ez eskuinean ez ezkerrean*/
+    display: table;
+    }
+input[type=text], input[type=password] { /*Pasahitzen eta testuen eremuak editatzeko*/
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+    
+input[type=text]:focus, input[type=password]:focus { /*Eremuetan klikatzerakoan*/
+    background-color: #ddd;
+    outline: none;
+    }
+
+button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    }
+
+button1:hover {
+    opacity:1;
+    }
+    
+body {
+	background-color: #a2a0ac;
+	background-image: url("Argazkiak/menua.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0em;
+}
+
+article {
+	margin-top: 1em;
+	text-align: center;
+	padding: 1em;
+}
+
+h1 {
+	font-size: 5em;
+	margin: 0.3em;
+	margin-bottom: 2em;
+	color: white;
+}	
+
+div {
+	text-align: center;
+}
+
+div1 {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	padding: 0em;
+}
+
+.botoiak:hover {
+	background-color: #60606c
+}
+
+.botoiak {
+	background-color: white;
+  	border: none;
+  	padding: 1em 2em;
+  	text-align: center;
+  	display: inline-block;
+  	font-size: 3em;
+  	border-radius: 0.5em;
+  	-webkit-transition-duration: 0.6s;
+  	transition-duration: 0.6s;
+  	color: black;
+	border-radius: 0.3em;
+	margin: 1em;
+
+	margin-right: 2em;
+	margin-left: 2em
+}
+
+.Aukerak {
+	text-align: center;
+}
+
+footer {
+	margin: 0em;
+	margin-top: 2em;
+	text-align: center;
+	padding: 0.5em;
+	background-color: grey;
+	position: fixed;
+	bottom: 0em;
+	width: 100%;
+}
+
+img {
+
+	padding: 0.6em;
+	float: right;
+}
+
+footer button {
+	border-radius: 0em;
+	margin: 0em;
+}

@@ -1,0 +1,71 @@
+<html>
+	<head>
+	
+		<title>
+			Mistery Lapurra		
+		</title>
+
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="shortcut icon" type="image/x-icon" href="Argazkiak/logo.ico" />
+		
+	</head>
+
+	<body>
+		<audio>
+		 	<source src="mp3/efecto.mp3" type="audio/mpeg" autoplay="auto" loop>
+		</audio>
+		<section>
+			
+			<article>
+			
+					<h1>Mistery Lapurra</h1> <!--Jokuaren izenburua-->
+
+
+				<div>
+				
+					<a href="HasierakoPantaila.html"><button type="button" class="botoiak">Jokatu</button></a> <!-- Jokatzeko botoia, hasierako pantailara eramaten duena-->
+					
+					<a href="Kredituak.html"><button type="button" class="botoiak">Kredituak</button></a><!-- Kredituen botoia, kredituak.html weborrira eramten duena -->
+				</div>
+				
+
+
+
+			</article>
+			
+		</section>
+		
+		<footer>
+		
+			<button onclick="document.getElementById('id01').style.display='block'">Report a bug</button> <!--Botoia klikatzerakoan id01 elementua irekiko da-->
+                <div id="id01" class="modal"> <!--"div" elementua balio du elementu asko "saku" batean sartzeko eta guztiak aldi berean editatzeko ahal izateko, "header", "article"... eta honen antzekoak. "id" botoia identifikatzeko eta "class=modal" motaren berezitasuna da botoian klikatzerakoan pantailan aurretik ikusten ez zen taula/formularioa sortzen duela.-->
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Itxi formularioa">&times;</span><!--"span" balio du hitzak editatzeko eta balioak emateko. Kasu honetan, "&times" "entitie"/elementua daukagu, honek sortzen duena X biderketaren ikonoa formualaroa ixteko ikonoaren bezala erabiltzeko. "title" ateratzen da kurtsorea ikonoaren gainean segundu batzuk uzterakoan.-->
+                    <form class="modal-content"> <!--formularioa amaitzerakoan, informazioa gordetzen da "/action_page.php" fitxategi batean-->
+                        <div class="container">
+                            <h2 color="black">REPORT A BUG</h1>
+                            <p>Mesedez, bete formularioa zure arazoa guri jakinarazteko.</p>
+                            <h5 align="center">Derrigorrez*</h5>
+                            <hr>
+                            <label for="email"><b>Email-a*</b></label>
+                            <input type="text" placeholder="Sartu email-a" name="email" required="true">
+                            <label for="pasahitza"><b>Zure Izena*</b></label>
+                            <input type="text" placeholder="Sartu zure izena" name="pasahitza" required="true">
+                            <label for="psherrepikatu"><b>Zehaztu zure arazoa*</b></label>
+                            <input type="text" placeholder="Zure arazoa" name="psherrepikatu" required="true">
+                            <label>
+                                <input type="checkbox" name="onartu" style="margin-bottom:15px">*Onartzen ditut: <a href="https://www.aepd.es/agencia/politica-privacidad-aviso-legal.html" target="_blank" required="true">Terms & Privacy</a>
+                            </label>
+                            <div class="clearfix">
+                                <button1 type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Itxi</button1>
+                                <button1 type="submit" onclick="document.getElementById('submit').click()" value="Submit" class="signupbtn">Bidali</button1>
+                                <input type="submit" value="submit" id="submit" style="display: none;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+			<a href="https://www.mondragon.edu/eu/hasiera"><img src="Argazkiak/mu.png" height="38.5px" width="64.5px">
+
+			<a href="Kontaktatu.html"><button type="button">Kontaktatu</button></a>	
+		</footer>
+	</body>	
+</html>
